@@ -26,7 +26,7 @@ body{
     height: 160px;
     position: fixed;
     background-color: #fff;
-    z-index: 999;
+    // z-index: 999;
 }
 
 .nav{
@@ -47,6 +47,31 @@ body{
 .content-box{
     margin-top: 160px;
     height: calc(100vh - 160px);
+    position: relative;
+
+    &__title{
+        position: absolute;
+        font-size: 36px;
+        text-transform: uppercase;
+        line-height: 41px;
+        font-weight: 500;
+        top: -20px;
+        right: 13%;
+        z-index: 2;
+        background-color: #fff;
+
+        &::after{
+            content: '02';
+            font-weight: bold;
+            font-size: 72px;
+            color: $base-color;
+            position: absolute;
+            top: 0;
+            right: -105px;
+            background-color: inherit;
+            padding-left: 15px;
+        }
+    }
 
     &_base-color{
         background-color: $base-color;
