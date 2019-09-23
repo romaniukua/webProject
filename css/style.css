@@ -20,53 +20,42 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
-  content: none;
-}
+  content: '';
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 body {
-  font-family: "Montserrat", sans-serif;
-}
+  font-family: 'Montserrat', sans-serif; }
 
 .container {
   width: 100%;
   max-width: 1800px;
   padding: 0 100px;
-  margin: 0 auto;
-  position: relative;
-}
+  margin: 0 auto; }
 
 .header {
   width: 100%;
@@ -75,29 +64,42 @@ body {
   height: 160px;
   position: fixed;
   background-color: #fff;
-  z-index: 999;
-}
+  z-index: 999; }
 
 .nav__title {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: bold;
-  padding-right: 58px;
-}
+  padding-right: 58px; }
 
 .wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
+  align-items: center; }
+
+.content-box {
+  margin-top: 160px;
+  height: calc(100vh - 160px); }
+  .content-box_base-color {
+    background-color: #F9DE4F; }
+  .content-box_with-border {
+    border: 1px solid #000; }
 
 .banner {
-  background-color: #F9DE4F;
-  margin-top: 160px;
   padding-top: 335px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: center; }
+
+.social-nav {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100vh - 160px);
+  height: 200px;
+  top: 0px;
+  left: 0px;
+  transform: rotate(270deg);
+  position: fixed;
+  z-index: 999; }
 
 /*# sourceMappingURL=style.css.map */
