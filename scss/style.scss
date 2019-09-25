@@ -19,14 +19,30 @@ body{
     margin: 0 auto;
 }
 
+.btn{
+    background-color: #02000B;
+    font-size: 17px;
+    line-height: 60px;
+    width: 280px;
+    color: $base-color;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 30px;
+
+    &_yellow{
+        background-color: $base-color;
+        color: #02000B;
+    }
+}
+
 .header{
     width: 100%;
     display: flex;
     align-items: center;
     height: 160px;
     position: fixed;
-    background-color: #fff;
-    // z-index: 999;
+    z-index: 999;
 }
 
 .nav{
@@ -36,7 +52,38 @@ body{
         font-weight: bold;
         padding-right: 58px;
     }
+
+    &__menu-wrapper{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: right;
+        background: #fff;
+        padding-top: 70px;
+        display: none;
+    }
+
+    &__menu{
+        padding-right: 95px;
+        padding-top: 70px;
+    }
+
+    &__item{
+        font-weight: bold;
+        font-size: 50px;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+    }
+
+    &__anchor{
+        text-decoration: none;
+        color: #000;
+    }
 }
+
+
 
 .wrap{
     display: flex;
@@ -73,6 +120,7 @@ body{
         }
     }
 
+
     &_base-color{
         background-color: $base-color;
     }
@@ -88,8 +136,20 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    position: relative;
 
+    .tabs-menu{
+        display: flex;
+        padding-top: 60px;
+
+        &__item{
+            padding-right: 80px;
+        }
+    }
+    &__btn{
+        margin-top: 140px;
+    }
+}
 
 
 .social-nav{
@@ -101,6 +161,45 @@ body{
     left: 0px;
     transform: rotate(270deg);
     position: fixed;
-    z-index: 999;
+    // z-index: 999;
 }
+
+.about_us{
+    display: flex;
+    flex-direction: column;
+    .team-slider{
+        margin-top: 75px;
+        padding: 0 100px;
+    }
+
+    .card{
+        width: 310px;
+
+        img{
+            width: 310px;
+        }
+
+        &__description{
+            padding-left: 22px;
+        }
+        &__title{
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 35px;
+        }
+        &__position{
+            font-size: 16px;
+            color: #02000B;
+            padding: 13px 0;
+        }
+
+        &__text{
+            font-size: 16px;
+            color: #02000B;
+            line-height: 25px;
+        }
+    }
+    
+}
+
 

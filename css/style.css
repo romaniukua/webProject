@@ -57,19 +57,54 @@ body {
   padding: 0 100px;
   margin: 0 auto; }
 
+.btn {
+  background-color: #02000B;
+  font-size: 17px;
+  line-height: 60px;
+  width: 280px;
+  color: #F9DE4F;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 30px; }
+  .btn_yellow {
+    background-color: #F9DE4F;
+    color: #02000B; }
+
 .header {
   width: 100%;
   display: flex;
   align-items: center;
   height: 160px;
   position: fixed;
-  background-color: #fff; }
+  z-index: 999; }
 
 .nav__title {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: bold;
   padding-right: 58px; }
+.nav__menu-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: right;
+  background: #fff;
+  padding-top: 70px;
+  display: none; }
+.nav__menu {
+  padding-right: 95px;
+  padding-top: 70px; }
+.nav__item {
+  font-weight: bold;
+  font-size: 50px;
+  text-transform: uppercase;
+  padding-bottom: 30px; }
+.nav__anchor {
+  text-decoration: none;
+  color: #000; }
 
 .wrap {
   display: flex;
@@ -109,7 +144,15 @@ body {
   padding-top: 335px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
+  .banner .tabs-menu {
+    display: flex;
+    padding-top: 60px; }
+    .banner .tabs-menu__item {
+      padding-right: 80px; }
+  .banner__btn {
+    margin-top: 140px; }
 
 .social-nav {
   display: flex;
@@ -119,7 +162,31 @@ body {
   top: 0px;
   left: 0px;
   transform: rotate(270deg);
-  position: fixed;
-  z-index: 999; }
+  position: fixed; }
+
+.about_us {
+  display: flex;
+  flex-direction: column; }
+  .about_us .team-slider {
+    margin-top: 75px;
+    padding: 0 100px; }
+  .about_us .card {
+    width: 310px; }
+    .about_us .card img {
+      width: 310px; }
+    .about_us .card__description {
+      padding-left: 22px; }
+    .about_us .card__title {
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 35px; }
+    .about_us .card__position {
+      font-size: 16px;
+      color: #02000B;
+      padding: 13px 0; }
+    .about_us .card__text {
+      font-size: 16px;
+      color: #02000B;
+      line-height: 25px; }
 
 /*# sourceMappingURL=style.css.map */

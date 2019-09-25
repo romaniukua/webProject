@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./js/onePageScroll/onepage-scroll.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic"
         rel="stylesheet">
@@ -24,6 +26,32 @@
                     <a href="#" class="nav__burger">
                         <img src="./img/burger.svg" alt="burger">
                     </a>
+                    <div class="nav__menu-wrapper container">
+                        <span class="nav__title">Menu</span>
+                        <a href="#" class="nav__burger">
+                            <img src="./img/close.svg" alt="burger">
+                        </a>
+                        <ul class="nav__menu">
+                            <li class="nav__item">
+                                <a href="" class="nav__anchor">Главная</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="" class="nav__anchor">О нас</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="" class="nav__anchor">Мы предлагаем</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="" class="nav__anchor">Наши кейсы</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="" class="nav__anchor">g-команда</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="" class="nav__anchor">Оставь заявку</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
             
@@ -47,6 +75,31 @@
                     <h1 class="banner__logo">
                         <img src="./img/Banner-logo.svg" alt="banner-logo">
                     </h1>
+                    <nav>
+                        <ul class="tabs-menu">
+                            <li class="tabs-menu__item">
+                                <a href="#" class="tabs-menu__anchor">
+                                    <img src="./img/tab_1.svg" alt="digital marketing">
+                                </a>
+                            </li>
+                            <li class="tabs-menu__item">
+                                <a href="#" class="tabs-menu__anchor">
+                                    <img src="./img/tab_2.svg" alt="offline advertising">
+                                </a>
+                            </li>
+                            <li class="tabs-menu__item">
+                                <a href="#" class="tabs-menu__anchor">
+                                    <img src="./img/tab_3.svg" alt="PR">
+                                </a>
+                            </li>
+                            <li class="tabs-menu__item">
+                                <a href="#" class="tabs-menu__anchor">
+                                    <img src="./img/tab_4.svg" alt="Photo/Video production">
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="btn banner__btn">мне это нужно</button>
                 </div>
             </div>
         </section>
@@ -59,10 +112,102 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="container">
+                <div class="content-box content-box_with-border about_us">
+                    <h2 class="content-box__title">
+                        мы предлагаем
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="content-box content-box_with-border about_us">
+                    <h2 class="content-box__title">
+                        наши кейсы
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="content-box content-box_with-border about_us">
+                    <h2 class="content-box__title">
+                        g-команда
+                    </h2>
+                    <div class="team-slider">
+                        <div class="team-slider__card card">
+                            <img src="./img/team_1.png" alt="">
+                            <div class="card__description">
+                                <h3 class="card__title">Валентин</h3>
+                                <p class="card__position">
+                                    Талисман digin
+                                </p>
+                                <p class="card__text">
+                                    Мифический персонаж, который направил нас на путь истины, а именно - лучше валик в руке, чем просто "хочу" в голове.
+                                    Валентин отвечает за яркость и динамичность компании...if you know, what i mean)))
+                                </p>
+                            </div>
+                        </div>
+                        <div class="team-slider__card card">
+                            <img src="./img/team_1.png" alt="">
+                            <div class="card__description">
+                                <h3 class="card__title">Валентин</h3>
+                                <p class="card__position">
+                                    Талисман digin
+                                </p>
+                                <p class="card__text">
+                                    Мифический персонаж, который направил нас на путь истины, а именно - лучше валик в руке, чем просто "хочу" в голове.
+                                    Валентин отвечает за яркость и динамичность компании...if you know, what i mean)))
+                                </p>
+                            </div>
+                        </div>
+                        <div class="team-slider__card card">
+                            <img src="./img/team_1.png" alt="">
+                            <div class="card__description">
+                                <h3 class="card__title">Валентин</h3>
+                                <p class="card__position">
+                                    Талисман digin
+                                </p>
+                                <p class="card__text">
+                                    Мифический персонаж, который направил нас на путь истины, а именно - лучше валик в руке, чем просто "хочу" в голове.
+                                    Валентин отвечает за яркость и динамичность компании...if you know, what i mean)))
+                                </p>
+                            </div>
+                        </div>
+                        <div class="team-slider__card card">
+                            <img src="./img/team_1.png" alt="">
+                            <div class="card__description">
+                                <h3 class="card__title">Валентин</h3>
+                                <p class="card__position">
+                                    Талисман digin
+                                </p>
+                                <p class="card__text">
+                                    Мифический персонаж, который направил нас на путь истины, а именно - лучше валик в руке, чем просто "хочу" в голове.
+                                    Валентин отвечает за яркость и динамичность компании...if you know, what i mean)))
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn_yellow">мне это нужно</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="content-box content-box_with-border about_us">
+                    <h2 class="content-box__title">
+                        оставь заявку
+                    </h2>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./js/onePageScroll/jquery.onepage-scroll.min.js"></script>
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 
