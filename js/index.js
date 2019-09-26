@@ -64,3 +64,19 @@ $('.team-slider').slick({
     ]
 });
 
+
+document.querySelector('.nav').addEventListener('click', ({target: {classList}}) => {
+  let nav = document.querySelector('.nav__menu-wrapper');
+
+  if(classList.contains('nav__burger_open')){
+    nav.classList.remove('non-active');
+    nav.style.display = 'block';
+    nav.classList.add('active');
+  }
+  if(classList.contains('nav__burger_close')){
+    nav.classList.remove('active');
+    nav.classList.add('non-active');
+    setTimeout(() => nav.style.display = 'none', 1000);
+  }
+  
+});
