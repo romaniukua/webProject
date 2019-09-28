@@ -64,6 +64,7 @@ $('.team-slider').slick({
     ]
 });
 
+//main nav script
 
 document.querySelector('.nav').addEventListener('click', ({target: {classList}}) => {
   let nav = document.querySelector('.nav__menu-wrapper');
@@ -80,3 +81,9 @@ document.querySelector('.nav').addEventListener('click', ({target: {classList}})
   }
   
 });
+
+
+$('.nav__item_sub-wrap').click(function(e){
+  e.preventDefault();
+  $(this).next().slideToggle();
+})

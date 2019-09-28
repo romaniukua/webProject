@@ -59,6 +59,7 @@ body{
         bottom: 0;
         left: 0;
         right: 0;
+        overflow: auto;
         text-align: right;
         background: #fff;
         padding-top: 70px;
@@ -205,8 +206,7 @@ body{
     
 
     &__menu{
-        padding-right: 95px;
-        padding-top: 70px;
+        padding: 70px 95px 50px 0;
     }
 
     &__item{
@@ -219,6 +219,52 @@ body{
     &__anchor{
         text-decoration: none;
         color: #000;
+    }
+
+    &__submenu{
+        display: none;
+    }
+
+    &__subanchor{
+        text-decoration: none;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 41px;
+
+        &_dm{
+            color: #E5097F;
+        }
+        &_oa{
+            color: #EB6020;
+        }
+        &_pr{
+            color: #AE4A84;
+        }
+        &_pp{
+            color: #008DD2;
+        }
+    }
+}
+
+.social-nav{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 95px;
+    padding-bottom: 50px;
+
+    &__item{
+        padding-left: 85px;
+
+        &:first-child{
+            padding-left: 0;
+        }
+    }
+
+    &__anchor{
+        font-size: 20px;
+        line-height: 35px;
+        color: #838383;
+        text-decoration: none;
     }
 }
 
@@ -291,17 +337,7 @@ body{
 }
 
 
-.social-nav{
-    display: flex;
-    justify-content: space-between;
-    width: calc(100vh - 160px);
-    height: 200px;
-    top: 0px;
-    left: 0px;
-    transform: rotate(270deg);
-    position: fixed;
-    // z-index: 999;
-}
+
 
 .about_us{
     display: flex;
