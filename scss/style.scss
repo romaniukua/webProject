@@ -10,6 +10,7 @@ $social-width: 100px;
 
 body{
     font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
 }
 
 .container{
@@ -210,19 +211,21 @@ body{
     }
 
     &__item{
-        font-weight: bold;
-        font-size: 50px;
-        text-transform: uppercase;
+        
         padding-bottom: 30px;
     }
 
     &__anchor{
+        font-weight: bold;
+        font-size: 50px;
+        text-transform: uppercase;
         text-decoration: none;
         color: #000;
     }
 
     &__submenu{
         display: none;
+        padding-top: 20px;
     }
 
     &__subanchor{
@@ -267,6 +270,42 @@ body{
         text-decoration: none;
     }
 }
+
+@media (max-width: 1100px){
+    .social-nav{
+        flex-direction: column;
+        &__item{
+            padding-left: 0;
+            margin-top: 20px;
+        }
+    }
+
+    // .container{
+    //     padding: 0 50px;
+    // }
+
+    .nav{
+        &__anchor{
+            font-size: 45px;
+        }
+
+        &__menu-wrapper{
+            padding-top: 50px;
+        }
+    }
+
+
+}
+
+@media (max-width: 768px){
+    .nav{
+        &__menu-wrapper{
+            background: $base-color;
+        }
+    }
+}
+
+
 
 
 
@@ -317,11 +356,12 @@ body{
 
 
 .banner{
-    padding-top: 335px;
+    padding-top: 35vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    overflow: auto;
 
     .tabs-menu{
         display: flex;
@@ -329,10 +369,71 @@ body{
 
         &__item{
             padding-right: 80px;
+
+            &:last-child{
+                padding-right: 0;
+            }
         }
     }
     &__btn{
-        margin-top: 140px;
+        margin-top: 15vh;
+    }
+}
+
+@media (max-width: 1280px){
+    .banner{
+        .tabs-menu{
+            flex-direction: column;
+            &__item{
+                padding-right: 0;
+                padding-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media (max-height:950px){
+    .banner{
+        padding-top: 25vh;
+
+        &__btn{
+            margin-top: 10vh;
+        }
+    }
+}
+
+@media (max-width:1024px){
+    .banner{
+        &__wrapper{
+            .container{
+                padding: 0;
+            }
+        }
+    }
+    .container{
+        padding: 0 20px;
+    }
+    .nav{
+        &__menu-wrapper{
+            padding-top: 50px;
+        }
+    }
+}
+
+@media (max-width:768px){
+    
+    .nav{
+        &__anchor{
+            font-size: 32px;
+        }
+
+        &__subanchor{
+            font-size: 24px;
+        }
+
+        &__title{
+            display: none;
+        }
     }
 }
 

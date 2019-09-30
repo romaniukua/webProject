@@ -84,11 +84,14 @@
     
 
     <main class="main">
-        <section>
+        <section class="banner__wrapper">
             <div class="container">
                 <div class="banner content-box content-box_base-color">
                     <h1 class="banner__logo">
-                        <img src="./img/Banner-logo.svg" alt="banner-logo">
+                        <picture >
+                            <source srcset="./img/Banner-logo.svg" media="(min-width: 769px)"> 
+                            <img src="./img/Banner-logo-mob.svg" alt="banner logo">
+                        </picture>
                     </h1>
                     <nav>
                         <ul class="tabs-menu">
